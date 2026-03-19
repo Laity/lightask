@@ -25,8 +25,13 @@ export function Popup() {
       <div className="px-4 pt-4 pb-3">
         <div className="flex items-center justify-between mb-3">
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-lg flex items-center justify-center">
-              <span className="text-white text-sm font-bold">Q</span>
+            <div className="w-7 h-7 bg-gradient-to-br from-indigo-500 via-violet-500 to-purple-400 rounded-lg flex items-center justify-center shadow-sm">
+              <svg className="w-4 h-4" viewBox="0 0 24 24" fill="none">
+                <path d="M5 6h14a2 2 0 012 2v7a2 2 0 01-2 2h-6.5l-3.5 3v-3H5a2 2 0 01-2-2V8a2 2 0 012-2z" fill="rgba(255,255,255,0.95)"/>
+                <circle cx="9" cy="11.5" r="1.2" fill="#8b5cf6" opacity="0.4"/>
+                <circle cx="12" cy="11.5" r="1.2" fill="#8b5cf6" opacity="0.65"/>
+                <circle cx="15" cy="11.5" r="1.2" fill="#8b5cf6" opacity="0.9"/>
+              </svg>
             </div>
             <h1 className="text-base font-bold text-gray-900">轻问 AI</h1>
           </div>

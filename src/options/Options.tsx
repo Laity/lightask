@@ -42,8 +42,13 @@ export function Options() {
       <div className="max-w-xl mx-auto py-8 px-4">
         {/* Header */}
         <div className="flex items-center gap-3 mb-8">
-          <div className="w-10 h-10 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center">
-            <span className="text-white text-lg font-bold">Q</span>
+          <div className="w-10 h-10 bg-gradient-to-br from-indigo-500 via-violet-500 to-purple-400 rounded-xl flex items-center justify-center shadow-sm">
+            <svg className="w-6 h-6" viewBox="0 0 24 24" fill="none">
+              <path d="M5 6h14a2 2 0 012 2v7a2 2 0 01-2 2h-6.5l-3.5 3v-3H5a2 2 0 01-2-2V8a2 2 0 012-2z" fill="rgba(255,255,255,0.95)"/>
+              <circle cx="9" cy="11.5" r="1.2" fill="#8b5cf6" opacity="0.4"/>
+              <circle cx="12" cy="11.5" r="1.2" fill="#8b5cf6" opacity="0.65"/>
+              <circle cx="15" cy="11.5" r="1.2" fill="#8b5cf6" opacity="0.9"/>
+            </svg>
           </div>
           <div>
             <h1 className="text-xl font-bold text-gray-900">轻问 AI 设置</h1>

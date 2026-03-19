@@ -1,10 +1,26 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="128" height="128" viewBox="0 0 128 128">
   <defs>
-    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#3b82f6"/>
-      <stop offset="100%" style="stop-color:#6366f1"/>
+    <linearGradient id="bg" x1="0" y1="0" x2="128" y2="128" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="55%" stop-color="#8b5cf6"/>
+      <stop offset="100%" stop-color="#a78bfa"/>
     </linearGradient>
+    <filter id="shadow" x="-4%" y="-4%" width="108%" height="112%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#4338ca" flood-opacity="0.25"/>
+    </filter>
   </defs>
-  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
-  <text x="64" y="88" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="white" text-anchor="middle">Q</text>
+  <!-- Background -->
+  <rect width="128" height="128" rx="30" fill="url(#bg)"/>
+  <!-- Subtle inner glow -->
+  <rect x="4" y="4" width="120" height="120" rx="26" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="1"/>
+  <!-- Chat bubble -->
+  <path d="M32 34 L96 34 C101.5 34 106 38.5 106 44 L106 76 C106 81.5 101.5 86 96 86 L60 86 L42 102 L42 86 L32 86 C26.5 86 22 81.5 22 76 L22 44 C22 38.5 26.5 34 32 34 Z" fill="rgba(255,255,255,0.95)" filter="url(#shadow)"/>
+  <!-- Typing dots inside bubble -->
+  <circle cx="48" cy="60" r="5.5" fill="#8b5cf6" opacity="0.4"/>
+  <circle cx="64" cy="60" r="5.5" fill="#8b5cf6" opacity="0.65"/>
+  <circle cx="80" cy="60" r="5.5" fill="#8b5cf6" opacity="0.9"/>
+  <!-- AI sparkle accent - 4-point star -->
+  <path d="M100 20 L102.2 27.8 L110 30 L102.2 32.2 L100 40 L97.8 32.2 L90 30 L97.8 27.8 Z" fill="#fcd34d" opacity="0.95"/>
+  <!-- Small sparkle -->
+  <path d="M88 18 L89 21 L92 22 L89 23 L88 26 L87 23 L84 22 L87 21 Z" fill="#fcd34d" opacity="0.6"/>
 </svg>
