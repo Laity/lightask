@@ -9,6 +9,10 @@ lerna-debug.log*
 
 node_modules
 dist
+
+# Generated PNG icons (built from SVG via scripts/generate-icons.mjs)
+public/icons/icon-*.png
+
 dist-ssr
 *.local
 
